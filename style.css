@@ -1,0 +1,128 @@
+
+
+.body{
+    background-color: #282120;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #E6C2BF;
+    position: sticky;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #A8A7D3;
+    color: #282120;
+  }
+  
+  .topnav a.active {
+    background-color: #a7a5e6;
+    color: #282120;
+  }
+
+.title_text{
+    color: #F8EFE4;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    position: absolute;
+    padding: -100 0 0 100;
+    top: 10%;
+    left: 45%;
+}
+
+.p{
+  font-family: cursive;
+  font-weight: normal;
+  font-size: 25px;
+  color: #F8EFE4;
+}
+
+.paragraphs{
+    color: #F8EFE4;
+    font-family: cursive;
+    font-weight: normal;
+    font-size: 23px;
+    position: absolute;
+    padding: -100 0 0 100;
+    top: 30%;
+    left: 5%;
+    display: inline;
+}
+
+.a{
+  color:#E6C2BF;
+  text-decoration: underline;
+}
+
+.git{
+  top: 45%;
+  left: 22%;
+  position: absolute;
+  padding: -100 0 0 100;
+  display: block;
+  font-size: 20px;
+  font-size: 20px;
+}
+
+.dis{
+  top: 45%;
+  left: 42%;
+  position: absolute;
+  padding: -100 0 0 100;
+  display: block;
+  font-size: 20px;
+}
+
+.sof{
+  top: 45%;
+  left: 62%;
+  position: absolute;
+  padding: -100 0 0 100;
+  display: block;
+  font-size: 20px;
+}
+
+.contact_text{
+  top: 60%;
+  left: 27%;
+  position: absolute;
+  padding: -100 0 0 100;
+  display: flex;
+  font-size: 25px;
+}
+
+.b{
+  color:#E6C2BF;
+  text-decoration: underline;
+}
+
+#topbtn{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #E6C2BF; /* Set a background color */
+  color: #282120; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  
+}
+
+#topbtn:hover{
+  background-color: #E6C2BF;
+  color: #282120;
+}
