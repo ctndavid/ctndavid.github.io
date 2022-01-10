@@ -130,22 +130,22 @@
   }
 
   .title_text{
-    font-size: 23vw;
-  }
-
-  .p .contact_text{
     font-size: 18vw;
   }
 
-  .paragraphs{
-    font-size: 16vw;
-  }
-  .git .dis .sof{
+  .p .contact_text{
     font-size: 13vw;
   }
 
+  .paragraphs{
+    font-size: 11vw;
+  }
+  .git .dis .sof{
+    font-size: 8vw;
+  }
+
   #topbtn{
-    bottom: 13vw;
-    right: 23vw;
+    bottom: 8vw;
+    right: 18vw;
   }
 }
