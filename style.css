@@ -124,13 +124,14 @@
   color: #282120;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
   .topnav a{
     font-size: 10vw;
   }
 
   .title_text{
     font-size: 18vw;
+    left: 30%;
   }
 
   .p .contact_text{
