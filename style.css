@@ -126,21 +126,21 @@
 
 @media screen and (max-width: 800px){
   .topnav a{
-    font-size: 10vw;
+    font-size: 5vw;
   }
 
   .title_text{
     font-size: 18vw;
-    left: 30vw;
+    left: 15vw;
     color: #E6C2BF;
   }
 
   .p .contact_text{
-    font-size: 13vw;
+    font-size: 5vw;
   }
 
   .paragraphs{
-    font-size: 11vw;
+    font-size: 7vw;
   }
   .git .dis .sof{
     font-size: 8vw;
