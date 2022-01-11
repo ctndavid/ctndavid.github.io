@@ -122,6 +122,9 @@
 }
 
 @media screen and (max-width: 800px){
+  .title_text .p .paragraphs {
+    font-family: 'Times New Roman', Times, serif;
+  }
   .topnav a{
     font-size: 5vw;
   }
