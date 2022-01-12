@@ -47,7 +47,6 @@
 }
 
 .p{
-  font-weight: normal;
   font-size: 25px;
   color: #F8EFE4;
   font-family: 'Battambang', light-300;
@@ -55,14 +54,11 @@
 
 .paragraphs{
     color: #F8EFE4;
-    font-weight: normal;
     font-size: 23px;
     position: absolute;
-    padding: -100 0 0 100;
     top: 30%;
     left: 5%;
     right: 5%;
-    display: inline;
     font-family: 'Battambang', light-300;
 }
 
@@ -73,20 +69,19 @@
 
 .flex_cont{
   top: 45%;
-  left: 18%;
-  position: absolute;
-  padding: -100 0 0 100;
+  left: 28%;
   display: flex;
   flex-direction: row;
+  position: absolute;
 }
 
 .flex_cont > div{
-  margin-right: 100px;
+  margin-right: 200px;
 }
 
 .flex_cont_text{
   top: 65%;
-  left: 24%;
+  left: 29%;
   position: absolute;
   padding: -100 0 0 100;
   font-size: 30px;
@@ -97,12 +92,14 @@
 
 .flex_cont_text > div{
   flex:1 1 auto;
-  margin-right: 290px;
+  margin-right: 190px;
 }
 
 .cont_img{
   width: 150px;
   height: 150px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 #topbtn{
@@ -142,20 +139,20 @@
   }
 
   .p .contact_text .paragraphs{
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .flex_cont{
-    top: 30vh;
-    left: 0vw;
+    top: 50vh;
+    left: 9vw;
   }
   .flex_cont > div{
-    margin-right: 10vw;
+    margin-right: 11vw;
   }
 
   .flex_cont_text{
-    top: 50vh;
-    left: 5vw;
+    top: 70vh;
+    left: 10vw;
     font-size: 4vw;
   }
   .flex_cont_text > div{
@@ -163,8 +160,8 @@
   }
 
   .cont_img{
-    width: 10vw;
-    height: 10vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   #topbtn{
