@@ -44,6 +44,7 @@
 .subtitles{
   font-family: 'Battambang', bold-700;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .p{
@@ -138,7 +139,10 @@
     font-size: 5vw;
   }
 
-  .p .contact_text .paragraphs{
+  .p{
+    font-size: 2vw;
+  }
+  .paragraphs{
     font-size: 2vw;
   }
 
