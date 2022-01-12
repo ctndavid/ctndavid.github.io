@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300&display=swap');
+
 .body{
     background-color: #282120;
 }
@@ -27,9 +29,12 @@
     color: #282120;
   }
 
+.title_text .p .paragraphs {
+    font-family: 'Battambang', cursive;
+}
+
 .title_text{
     color: #F8EFE4;
-    font-family: cursive;
     font-weight: bolder;
     font-size: 30px;
     position: absolute;
@@ -39,7 +44,6 @@
 }
 
 .p{
-  font-family: cursive;
   font-weight: normal;
   font-size: 27px;
   color: #F8EFE4;
@@ -47,14 +51,13 @@
 
 .paragraphs{
     color: #F8EFE4;
-    font-family: cursive;
     font-weight: normal;
     font-size: 23px;
     position: absolute;
     padding: -100 0 0 100;
     top: 30%;
-    left: 3%;
-    right: 3%;
+    left: 5%;
+    right: 5%;
     display: inline;
 }
 
@@ -63,52 +66,29 @@
   text-decoration: underline;
 }
 
-.git{
+.flex_cont{
   top: 45%;
-  left: 22%;
-  position: absolute;
-  padding: -100 0 0 100;
-  display: block;
-}
-
-.dis{
-  top: 45%;
-  left: 42%;
-  position: absolute;
-  padding: -100 0 0 100;
-  display: block;
-}
-
-.sof{
-  top: 45%;
-  left: 62%;
-  position: absolute;
-  padding: -100 0 0 100;
-  display: block;
-}
-
-.git_text{
-  top: 60%;
   left: 27%;
   position: absolute;
   padding: -100 0 0 100;
-  font-size: 30px;
+  display: flex;
+  flex-direction: row;
 }
 
-.dis_text{
+.flex_cont_text{
   top: 60%;
-  left: 45%;
+  left: 32%;
   position: absolute;
   padding: -100 0 0 100;
   font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  
 }
 
-.sof_text{
-  top:60%;
-  left: 67%;
-  position: absolute;
-  padding: -100 0 0 100;
-  font-size: 30px;
+.flex_cont_text > div{
+  flex:1 1 auto;
+  margin-right: 160px;
 }
 
 .cont_img{
@@ -137,17 +117,15 @@
   color: #282120;
 }
 
-@media screen and (max-width: 800px){
-  .title_text .p .paragraphs {
-    font-family: 'Times New Roman', Times, serif;
-  }
+@media screen and (max-width: 1000px){
+  
   .topnav a{
     font-size: 3vw;
   }
 
   .title_text{
     font-size: 5vw;
-    left: 33vw;
+    left: 34vw;
   }
 
   .p .contact_text{
@@ -164,35 +142,19 @@
     padding: 1vw;
   }
 
-  .git{
-    top: 50vh;
+  .flex_cont{
+    top: 30vh;
     left: 0vw;
+
   }
-  .dis{
+
+  .flex_cont_text{
     top: 50vh;
-    left: 29vw;
+    left: 5vw;
+    font-size: 5vw;
   }
-  .sof{
-    top: 50vh;
-    left: 59vw;
-  }
-  .cont_img{
-    width: 17vw;
-    height: 17vw;
-  }
-  .git_text{
-    top: 70vh;
-    left: 15vw;
-    font-size: 4vw;
-  }
-  .dis_text{
-    top: 70vh;
-    left: 40vw;
-    font-size: 4vw;
-  }
-  .sof_text{
-    top: 70vh;
-    left: 74vw;
-    font-size: 4vw;
+
+  .flex_cont_text > div{
+    margin-right: 10vw;
   }
 }
