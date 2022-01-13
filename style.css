@@ -4,6 +4,35 @@
     background-color: #282120;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #282120 #E6C2BF;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #282120;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #E6C2BF;
+  border-radius: 20px;
+  border: 3px solid #E6C2BF;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+  border-radius: 10px;
+  background: #a7a5e6;
+}
+
+*::-webkit-scrollbar-thumb:active{
+  border-radius: 10px;
+  border: 3px solid #a7a5e6;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #E6C2BF;
@@ -125,7 +154,6 @@
 }
 
 @media screen and (max-width: 1000px){
-  
   .topnav a{
     font-size: 3vw;
   }
@@ -170,7 +198,7 @@
 
   #topbtn{
     bottom: 5vh;
-    right: 5vw;
+    right: 2vw;
     padding: 1vw;
   }
 }
