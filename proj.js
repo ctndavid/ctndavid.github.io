@@ -131,9 +131,9 @@ function cppbutton() {
   downbut.onclick = function () {
     element.setAttribute(
       "href",
-      "data:Application/.exe;charset=utf-8," +
+      "data:text/plain;charset=utf-8," +
         encodeURIComponent(
-          "data/DrinkWater.exe"
+          "data/cppsbasics.exe"
         )
     );
     element.setAttribute("download", "Drink Water");
