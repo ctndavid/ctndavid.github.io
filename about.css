@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;700&display=swap');
+
+body{
+  background-color: #adc2d3;
+  transition: all .5s ease-in-out .2s;
+}
+
+.ME{
+    position: relative;
+    top:10vh;
+    left:40vw;
+    width: 17vw;
+    height: 17vw;
+    border-radius: 17vw;
+    border: 0.25vw solid #3b707d;
+    color: #3b707d;
+    transition: all .5s ease-in-out .2s;
+}
+.ME p{
+    position: relative;
+    top: 6.5vh;
+    left: 0.1vw;
+    font-family: 'Battambang', light-300;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+.DC{
+  position: relative;
+  top:30vh;
+  left:40.5vw;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 10vw;
+  border: 0.25vw solid #3b707d;
+  color: #3b707d;
+  transition: all .5s ease-in-out .2s;
+}
+
+.DC p{
+  position: relative;
+  top: 4vh;
+  left: 0.1vw;
+  font-family: 'Battambang', light-300;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.SK{
+  position: relative;
+  top:50vh;
+  left:40.5vw;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 10vw;
+  border: 0.25vw solid #3b707d;
+  color: #3b707d;
+  transition: all .5s ease-in-out .2s;
+}
+.SK h1{
+  position: inherit;
+  left: 5vw;
+  font-size: 2vw;
+}
+
+.SK p{
+  position: relative;
+  top: -5vh;
+  left: 0.1vw;
+  font-family: 'Battambang', light-300;
+  font-size: 1.25vw;
+  text-align: center;
+}
+
+.skilltree{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10vw;
+  flex-wrap: nowrap;
+  position: relative;
+  top:70vh;
+  left:20vw;
+  width:fit-content;
+  height:fit-content;
+  transition: all .5s ease-in-out .2s;
+}
+
+.row0{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30vw;
+  transition: all .5s ease-in-out .2s;
+}
+.row1{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30vw;
+  transition: all .5s ease-in-out .2s;
+}
+.row2{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30vw;
+  transition: all .5s ease-in-out .2s;
+}
+.row3{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30vw;
+  transition: all .5s ease-in-out .2s;
+}
+.row4{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30vw;
+  transition: all .5s ease-in-out .2s;
+}
+
+.S1{
+  width: 15vw;
+  height: 21.5vw;
+  border-radius: 3vw;
+  border: 0.25vw solid #3b707d;
+  color: #3b707d;
+  transition: all .5s ease-in-out .2s;
+}
+
+.S1 p{
+  position: relative;
+  top: 3.5vh;
+  left: 0.1vw;
+  font-family: 'Battambang', light-300;
+  font-size: 1.25vw;
+  text-align: center;
+}
+
+.S2{
+  width: 15vw;
+  height: 21.5vw;
+  border-radius: 3vw;
+  border: 0.25vw solid #3b707d;
+  color: #3b707d;
+  transition: all .5s ease-in-out .2s;
+}
+
+.S2 p{
+  position: relative;
+  top: 1vh;
+  left: 0.1vw;
+  font-family: 'Battambang', light-300;
+  font-size: 1.25vw;
+  text-align: center;
+}
+
+.S3{
+  width: 15vw;
+  height: 21.5vw;
+  border-radius: 3vw;
+  border: 0.25vw solid #3b707d;
+  color: #3b707d;
+  transition: all .5s ease-in-out .2s;
+}
+
+.S3 p{
+  position: relative;
+  top: -1vh;
+  left: 0.1vw;
+  font-family: 'Battambang', light-300;
+  font-size: 1.25vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .ME{
+    top: 10vh;
+    left: 17vw;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 50vw;
+    border: 0.25vh solid #3b707d;
+  }
+  .ME p{
+    top: 7vh;
+    font-size: 5vw;
+  }
+
+  .DC{
+    top: 25vh;
+    left: 19.55vw;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 55vw;
+    border: 0.25vh solid #3b707d;
+  }
+  .DC p{
+    top: 7vh;
+    font-size: 3vw;
+  }
+
+  .SK{
+    top: 45vh;
+    left: 19.55vw;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 55vw;
+    border: 0.25vh solid #3b707d;
+  }
+  .SK h1{
+    left: 18.5vw;
+    font-size: 7vw;
+  }
+  .SK p{
+    top: -3vh;
+    font-size: 4vw;
+  }
+
+  .skilltree{
+    row-gap: 10vw;
+    top: 60vh;
+    left: 5vw;
+  }
+
+  .row0{
+    column-gap: 20vw;
+  }
+  .row1{
+    column-gap: 20vw;
+  }
+  .row2{
+    column-gap: 20vw;
+  }
+  .row3{
+    column-gap: 20vw;
+  }
+  .row4{
+    column-gap: 20vw;
+  }
+
+  .S1{
+    width: 32.5vw;
+    height: 45vw;
+  }
+  .S1 p{
+    top: 2vh;
+    font-size: 2.5vw;
+  }
+
+  .S2{
+    width: 32.5vw;
+    height: 45vw;
+  }
+  .S2 p{
+    top: 1vh;
+    font-size: 2.5vw;
+  }
+
+  .S3{
+    width: 32.5vw;
+    height: 45vw;
+  }
+  .S3 p{
+    top: 0vh;
+    font-size: 2.5vw;
+  }
+}

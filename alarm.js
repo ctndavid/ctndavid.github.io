@@ -1,92 +1,131 @@
-//starting
-function start(){
-    let v = document.getElementById("start");
-    v.parentNode.removeChild(v);
-    //Create Stop/Snooze buttons
-    let stop = document.createElement("button");
-    stop.setAttribute('id', 'b1');
-    stop.setAttribute('class', "button")
-    stop.innerHTML = "Stop";
-    document.getElementsByClassName("but1")[0].appendChild(stop);
-    document.getElementById('b1').onclick = stopMusic;
-    let snooze = document.createElement("button");
-    snooze.setAttribute('id', 'b2');
-    snooze.setAttribute('class', 'button');
-    snooze.innerHTML = "Snooze";
-    document.getElementsByClassName("but2")[0].appendChild(snooze);
-    document.getElementById('b2').onclick = snoozeMusic;
+let th = 1;
+let mediabut = false;
 
-    let date = new Date();
-    let options = { hour: "numeric", minute: "numeric", second: "numeric" };
-    let minutes = {minute: "numeric"};
+function modtheme(){//Sets theme
+    th *= -1;
+    if(th == 1){ 
+        light();
+    }
+    else{
+        dark();
+    }
+}
 
-    let M, m; //minutes alarm + current time
-    M = date.toLocaleString('ro-RO', minutes);
+function light(){
+    document.body.style.background = 'lightblue';
+    document.getElementsByClassName('title')[0].style.textShadow = '2px 0 0 aliceblue, -2px 0 0 aliceblue, 0 2px 0 aliceblue, 0 -2px 0 aliceblue, 1px 1px aliceblue, -1px -1px 0 aliceblue, 1px -1px 0 aliceblue, -1px 1px 0 aliceblue';
+    document.getElementsByClassName('title')[0].style.color = 'lightblue';
+    document.getElementsByClassName('theme_icon')[0].src = 'data/dk.png';
+    if(!mediabut){
+        document.getElementById('start_but').style.borderColor = 'aliceblue';
+        document.getElementById('start_but').style.color = 'aliceblue'; 
+    }
+    else if(mediabut){
+        document.getElementsByClassName('stop_but')[0].style.borderColor = 'aliceblue';
+        document.getElementsByClassName('stop_but')[0].style.color = 'aliceblue';
+        document.getElementsByClassName('snooze_but')[0].style.borderColor = 'aliceblue';
+        document.getElementsByClassName('snooze_but')[0].style.color = 'aliceblue';
+    }
+}
 
-    let alarm = false; //Activate/Deactivate buttons + Start/Stop alarm
-    
-    setInterval(function() { 
-        date = new Date();
-        var text = document.getElementById("clock"); 
-        text.innerHTML = date.toLocaleString('ro-RO', options);
-        m = date.toLocaleString('ro-RO', minutes);
-        m = verify(m);
-        M = verify(M);
-        if(m === M){
+function dark(){
+    document.body.style.background = '#0A0A2C';
+    document.getElementsByClassName('title')[0].style.textShadow = '2px 0 0 #DCAE96, -2px 0 0 #DCAE96, 0 2px 0 #DCAE96, 0 -2px 0 #DCAE96, 1px 1px #DCAE96, -1px -1px 0 #DCAE96, 1px -1px 0 #DCAE96, -1px 1px 0 #DCAE96';
+    document.getElementsByClassName('title')[0].style.color = '#0A0A2C';
+    document.getElementsByClassName('theme_icon')[0].src = 'data/li.png';
+    if(!mediabut){
+        document.getElementById('start_but').style.borderColor = '#DCAE96';
+        document.getElementById('start_but').style.color = '#DCAE96';
+    }
+    else if(mediabut){
+        document.getElementsByClassName('stop_but')[0].style.borderColor = '#DCAE96';
+        document.getElementsByClassName('stop_but')[0].style.color = '#DCAE96';
+        document.getElementsByClassName('snooze_but')[0].style.borderColor = '#DCAE96';
+        document.getElementsByClassName('snooze_but')[0].style.color = '#DCAE96';
+    }
+}
+
+function spawn(){
+    document.getElementsByClassName('stop_button')[0].style.display = 'block';
+    document.getElementsByClassName('snooze_button')[0].style.display = 'block';
+    mediabut = true;
+    if(th == 1){
+        light();
+    }else{
+        dark();
+    }
+}
+
+function despawn(){
+    document.getElementsByClassName('stop_button')[0].style.display = 'none';
+    document.getElementsByClassName('snooze_button')[0].style.display = 'none';
+    mediabut = false;
+}
+
+function startfunc(){
+    document.body.removeChild(document.getElementsByClassName('start_button')[0]);
+    spawn();
+    alarmfunc();
+}
+
+//ALARM
+
+//alarm sound
+var music = new Audio("alarm.mp4");
+let alarm = false;
+
+let m2, m1;
+
+let d1 = new Date();//actual hour
+let d2 = new Date();//next alarm
+
+//time options
+let o1 = {hour : 'numeric', minute: 'numeric'};
+let o2 = {minute : 'numeric'};
+
+function addmin(value){
+    m2 = Number(m2);
+    m2 += value;
+    if( m2 > 59){
+        m2 -= 60;
+    }
+    m2.toString();
+}
+
+function play(){
+    music.play();
+}
+
+function stopfunc(){
+    if(alarm){
+        music.pause();
+        music.currentTime = 0;
+        addmin(1);
+        alarm = false;
+        despawn();
+    }
+}
+
+function snoozefunc(){
+    if(alarm){
+        music.pause();
+        music.pause();
+        music.currentTime = 0;
+        addmin(1);
+        alarm = false;
+        despawn();
+    }
+}
+
+function alarmfunc(){
+    m2 = d2.toLocaleString('ro-RO', o2);
+    setInterval(function(){
+        d1 = new Date();
+        m1 = d1.toLocaleString('ro-RO', o2);
+        if(m1 == m2){
             alarm = true;
+            spawn();
             play();
         }
-        
-    }, 1000);
-
-    //Audio
-    var music = new Audio("alarm.mp4");
-
-    function play(){
-        music.play();
-    }
-
-    function stopMusic(){
-        if(alarm){
-            music.pause();
-            music.currentTime = 0;
-            addminutes(30);
-            alarm = false;
-        }
-    }
-
-    function snoozeMusic(){
-        if(alarm){
-            music.pause();
-            music.pause();
-            music.currentTime = 0;
-            addminutes(10);
-            alarm = false;
-        }
-    }
-
-    function addminutes(value){
-        M = Number(M);
-        M += value;
-        if(M > 59){
-            M -= 60;
-            if(M < 10){
-                M = "0" + (M + "");
-            }
-            else{
-                M += "";
-            }
-        }
-        else{
-            M += "";
-        }
-        console.log(M);
-    }
-
-    function verify(value){
-        if(Number(value) < 10){
-            value = "0" + value;
-        }
-        return value;
-    }
+    }, 1000);   
 }

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;700&display=swap');
+
+.body{
+    background-color: #282120;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #E6C2BF #282120;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #282120;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #E6C2BF;
+  border-radius: 20px;
+  border: 3px solid #E6C2BF;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+  border-radius: 10px;
+  background: #a7a5e6;
+}
+
+*::-webkit-scrollbar-thumb:active{
+  border-radius: 10px;
+  border: 3px solid #a7a5e6;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #E6C2BF;
+    position: sticky;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Battambang', light-300;
+  }
+  
+  .topnav a:hover {
+    background-color: #A8A7D3;
+    color: #282120;
+  }
+  
+  .topnav a.active {
+    background-color: #a7a5e6;
+    color: #282120;
+  }
+
+.title_text{
+    color: #F8EFE4;
+    font-weight: bolder;
+    font-size: 30px;
+    position: absolute;
+    padding: -100 0 0 100;
+    top: 10%;
+    left: 45%;
+    font-family: 'Battambang', bold-700;
+}
+
+.subtitles{
+  font-family: 'Battambang', bold-700;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.p{
+  font-size: 25px;
+  color: #F8EFE4;
+  font-family: 'Battambang', light-300;
+}
+
+.paragraphs{
+    color: #F8EFE4;
+    font-size: 23px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    font-family: 'Battambang', light-300;
+}
+
+.a{
+  color:#E6C2BF;
+  text-decoration: underline;
+}
+
+.flex_cont{
+  top: 45%;
+  left: 28%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+.flex_cont > div{
+  margin-right: 200px;
+}
+
+.flex_cont_text{
+  top: 65%;
+  left: 29%;
+  position: absolute;
+  padding: -100 0 0 100;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Battambang', light-300;
+}
+
+.flex_cont_text > div{
+  flex:1 1 auto;
+  margin-right: 190px;
+}
+
+.cont_img{
+  width: 150px;
+  height: 150px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#topbtn{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #E6C2BF; /* Set a background color */
+  color: #282120; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  
+}
+
+#topbtn:hover{
+  background-color: #E6C2BF;
+  color: #282120;
+}
+
+@media screen and (max-width: 1000px){
+  .topnav a{
+    font-size: 3vw;
+  }
+
+  .title_text{
+    font-size: 5vw;
+    left: 34vw;
+  }
+
+  .subtitles{
+    font-size: 6vw;
+  }
+
+  .p{
+    font-size: 4vw;
+  }
+  .paragraphs{
+    font-size: 4vw;
+  }
+
+  .flex_cont{
+    top: 50vh;
+    left: 9vw;
+  }
+  .flex_cont > div{
+    margin-right: 11vw;
+  }
+
+  .flex_cont_text{
+    top: 67vh;
+    left: 10vw;
+    font-size: 4vw;
+  }
+  .flex_cont_text > div{
+    margin-right: 10vw;
+  }
+
+  .cont_img{
+    width: 20vw;
+    height: 20vw;
+  }
+
+  #topbtn{
+    bottom: 5vh;
+    right: 2vw;
+    padding: 1vw;
+  }
+}

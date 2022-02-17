@@ -2,45 +2,71 @@
 <html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
-    <link rel = "stylesheet" href="style.css">
-    <link rel="icon" href="">
+    <link rel = "stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="topnav.css">
+    <link rel="stylesheet" href="scrollbar.css">
     <head>
-        <title>Portofolio - Home</title>
+        <title>Home</title>
     </head>
 
-    <body class ="body">
-        <div class = "topnav">
-            <a href = "contact.html">Contact</a>
-            <a href = "projects.html">Projects</a>
-            <a class = "active" href = "index.html">Home</a>
+    <bod onload="getpage('home')">
+        <div class = "topnav" >
+            <button id="themebut" onclick="modtheme()">
+                <image src="data/dk.png" class='dm_but' id='mode_img'></image>
+            </button>
+            <a class='a1' href = "about.html" >About Me</a>
+            <a class='a1' href = "projects.html" >Projects</a>
+            <a class='a1' href = "index.html" >Home</a>
+            
         </div>
 
-        <div class = "title_text">
-            <h1>Home</h1>
+        <div class="soc">
+            <div class='social'>
+                <button onclick="opgh()">
+                    <img src='data/ghdk.png' id="GHI" alt='GitHub icon'></img>
+                </button>
+                <button onclick="opsof()">
+                    <img src='data/sof.png' alt ='Stackoverflow icon'></img>
+                </button>
+            </div>
+
+            <div class = "ME">
+                <p>
+                    Hello, I am Yttrrium! <br>
+                    Nice to meet you!
+                </p>
+            </div>
+            
+            <div class = 'ME2'>
+                <img src='data/ytr.png' alt='profile pic'>
+            </div>
         </div>
 
-        <div class = "paragraphs">
-            <p class = "p">
-                <br>
-                Hello, I'm Yttrrium! Nice to meet you!
-                I am a junior-level programmer trying new things in order to gather as much experience as I can. So hit me up with ideas, I'm open to everything.
-                I started off with HTML, not a programming language, but it gave me a hint on what I would want to do on long-term. Mainly, I learn C++, but I 
-                have been starting to explore other languages, such as Python, C#, Javascript and C along with methods of implementing GUI's into what I do.
-                Below I will post a news log on what I do and learn, so check it out from time to time. <br><br><br>
-                
-            </p>
-            <h1 class="subtitles">News Log:</h1>
-            <p class="p">
-                12 january 2022: Final touches made to the mobile version of the website in order to be responsive
-                <br>9 january 2022: Special thanks to GitHub for hosting my website for free using the repository system
-                <br>7 january 2022: I have finished the Drink Water application after a very long process. More about it on <a href="https://github.com/Yttrriium/Basic-Projects" target="_blank" class = "a">GitHub</a> along with the download available there and
+        
+
+        <div class = "NL">
+            <h1 class="subtitles" id='sub'>News Log</h1>
+            <div>
+                <i>Just a section to keep you updated on what I am working on currently</i>
+            </div>
+            <p>
+                February 2022: I have finished this one month goal of changing how the website looks and I am proud with the changes<br>
+                I brought. I learned a lot of new things and I am capable of doing more on my own. Here is the <a href="oldsite/home.html" target="_blank" class="a">old website</a>
+                for a comparison.
+                <br><br>14 february 2022: Falling in love with JavaScript and the changes that I am preparing in order to update the visual part<br>
+                 of the website. It is something that I look up to so it will be great.
+                <br><br>12 january 2022: Final touches made to the mobile version of the website in order to be responsive
+                <br><br>9 january 2022: Special thanks to GitHub for hosting my website for free using the repository system
+                <br><br>7 january 2022: I have finished the Drink Water application after a very long process. More about it on <a href="https://github.com/Yttrriium/Basic-Projects" target="_blank" class = "a"><i>GitHub</i></a> along with <br>the download available there and
                 in the <a href = "projects.html" class="a"><i>Projects</i></a> tab
-                <br>23 december 2021: I have started working on this personal site, as a side project besides <a href = "projects.html" class="a">Drink Water</a>
+                <br><br>23 december 2021: I have started working on this personal site, as a side project beside <a href = "projects.html" class="a"><i>Drink Water</i></a>
             </p>
         </div>
         
-        <button id = "topbtn" onclick="topFunction()" title = "go to top"><img src = "data/toparrow.png" width = "25px" height="25px" alt="top_arrow"></button>
-        <script src="func.js" type="text/javascript"></script>
+        <button class='topbtn' id = "topbtn" onclick="topFunction()" title = "go to top"><img src = "data/toparrow.png"  alt="top_arrow"></button>
+        
+        <script src="index.js" type="text/javascript"></script>
+        <script src="colormode.js" type="text/javascript"></script>
     </body>
 
 

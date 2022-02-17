@@ -1,145 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;700&display=swap');
+
 body{
-    background-color: #add8e6;
+    background-color: lightblue;
+    transition: all .5s ease-in-out .2s;
 }
-.maintext{
-    position: absolute;
-    width: 700px;
-    height: 100px;
-    z-index: 15;
-    top: 25%;
-    left: 42%;
-    margin: -100px 0 0 -150px;
-}
+
 .title{
-    font-size: 80px;
-    font-family: "Cursive";
-    color:aliceblue;
-    text-shadow: 2px 0 0 #C991DF, -2px 0 0 #C991DF, 0 2px 0 #C991DF, 0 -2px 0 #C991DF, 1px 1px #C991DF, -1px -1px 0 #C991DF, 1px -1px 0 #C991DF, -1px 1px 0 #C991DF;
+    position: relative;
+    top: 15vh;
+    left: 35vw;
 
-}
+    width: fit-content;
+    height: fit-content;
 
-#start{
-    position: absolute;
-    top: 55%;
-    left: 52%;
-    margin: -100px 0 0 -150px;
-    color:aliceblue;
-    text-align: center;
-}
-
-.star{
-    border: none;
-    width: 200px;
-    color: white;
-    padding: 30px 40px;
-    text-align: center;
-    display: inline-block;
-    font-size: 25px;
-    font-family: "Cursive";
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white; 
-    color: #add8e6; 
-    border: 2px solid white;
-}
-.star:hover{
-    background-color: #add8e6;
-    color: white;
-}
-
-#clock{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -100px 0 0 -150px;
-    font-size: 75px;
-    font-family: "Cursive";
-    color:aliceblue;
-    text-align: center;
-}
-
-.but1{
-    position: absolute;
-    width: 700px;
-    height: 100px;
-    z-index: 15;
-    top: 90%;
-    left: 41%;
-    margin: -100px 0 0 -150px;
     color: lightblue;
-}
-.but2{
-    position: absolute;
-    width: 700px;
-    height: 100px;
-    z-index: 15;
-    top: 90%;
-    left: 62%;
-    margin: -100px 0 0 -150px;
-    color: lightblue;
+    text-shadow: 2px 0 0 aliceblue, -2px 0 0 aliceblue, 0 2px 0 aliceblue, 0 -2px 0 aliceblue, 1px 1px aliceblue, -1px -1px 0 aliceblue, 1px -1px 0 aliceblue, -1px 1px 0 aliceblue;
+    font-family: 'Battambang', bold-700;
+    font-size: 5vw;
+    transition: all .5s ease-in-out .2s;
 }
 
-.button {
-    border: none;
-    width: 210px;
-    color: white;
-    padding: 30px 70px;
-    text-align: center;
-    display: inline-block;
-    font-size: 25px;
-    font-family: "Cursive";
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white; 
-    color: #add8e6; 
-    border: 2px solid white;
+.theme_button{
+    position: relative;
+    top: -7vw;
+    left: 2vw;
+
+    width: fit-content;
+    height:fit-content;
+    transition: all .5s ease-in-out .2s;
 }
 
-.button:hover {
-    background-color: #add8e6;
-    color: white;
+.theme_button button{
+    width: fit-content;
+    height: fit-content;
+
+    background-color: transparent;
+    border-width: 0vw;
+}
+.theme_button button:hover{
+    background-color: #DCAE96;
+    border-radius: 5vw;
 }
 
-#glasses{
-    top: 5%;
-    left: 85%;
-    font-family: "Cursive";
-    font-size: 25px;
-    position: absolute;
+.theme_icon{
+    width: 3vw;
+    height: 3vw;
+}
+
+.start_button{
+    position: relative;
+    top: 22.5vh;
+    left: 42.5vw;
+
+    width: fit-content;
+    height: fit-content;
+
+    transition: all .5s ease-in-out .2s;
+}
+
+.start_button button{
+    width: 12.5vw;
+    height: 5vw;
+    background-color: transparent;
+    border-radius: 2vw;
+    border-color: aliceblue;
+    border-width: 0.2vw;
+
     color: aliceblue;
+    font-family: 'Battambang', light-300;
+    font-size: 2vw;
+    transition: all .5s ease-in-out .2s;
+}
+.start_button button:hover{
+    background-color: #916e79;
 }
 
-.back{
-    position: absolute;
-    width: 700px;
-    height: 100px;
-    z-index: 15;
-    top: 15%;
-    left: 10%;
-    margin: -100px 0 0 -150px;
+.mediabuttons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 12.5vw;
+    row-gap: 2vw;
+    flex-wrap: wrap;
+
+    position: relative;
+    top: 30vh;
+    left: 30vw;
+
+    height: fit-content;
+    width: fit-content;
+
+    transition: all .5s ease-in-out .2s;
 }
 
-.back_button {
-    border: none;
-    width: 210px;
-    color: white;
-    padding: 30px 70px;
-    text-align: center;
-    display: inline-block;
-    font-size: 25px;
-    font-family: "Cursive";
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white; 
-    color: #add8e6; 
-    border: 2px solid white;
-    text-decoration: none;
+.stop_button{
+    display: none;
 }
 
-.back_button:hover {
-    background-color: #add8e6;
-    color: white;
+.stop_but{
+    width: 12.5vw;
+    height: 5vw;
+
+    background-color: transparent;
+    border-radius: 2vw;
+    border-color: aliceblue;
+    border-width: 0.2vw;
+
+    color: aliceblue;
+    font-family: 'Battambang', light-300;
+    font-size: 2vw;
+    transition: all .5s ease-in-out .2s;
+}
+
+.stop_but:hover{
+    background-color: #916e79;
+}
+
+.snooze_button{
+    display: none;
+}
+
+.snooze_but{
+    width: 12.5vw;
+    height: 5vw;
+
+    background-color: transparent;
+    border-radius: 2vw;
+    border-color: aliceblue;
+    border-width: 0.2vw;
+
+    color: aliceblue;
+    font-family: 'Battambang', light-300;
+    font-size: 2vw;
+    transition: all .5s ease-in-out .2s;
+}
+
+.snooze_but:hover{
+    background-color: #916e79;
+}
+
+@media screen and (max-width: 1000px){
+    .title{
+        left: 13vw;
+        font-size: 12.5vw;
+    }
+
+    .theme_button{
+        top: -10vh;
+    }
+    .theme_icon{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .start_button{
+        top: 30vh;
+        left: 23vw;
+    }
+
+    .start_button button{
+        width: 50vw;
+        height: 23vw;
+        border-radius: 5vw;
+        border-width: 0.5vw;
+        font-size: 7vw;
+    }
+
+    .mediabuttons{
+        top: 55vw;
+        left: 7.5vw;
+    }
+
+    .stop_but{
+        width: 35vw;
+        height: 20vw;
+        border-radius: 5vw;
+        border-width: 0.5vw;
+        font-size: 5vw;
+    }
+
+    .snooze_but{
+        width: 35vw;
+        height: 20vw;
+        border-radius: 5vw;
+        border-width: 0.5vw;
+        font-size: 5vw;
+    }
 }

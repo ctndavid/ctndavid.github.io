@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;700&display=swap");
+
+body {
+  background-color: #adc2d3;
+  transition: all .5s ease-in-out .2s;
+}
+
+.title{
+  position: relative;
+  top: 5vh;
+  left: 43vw;
+  width: fit-content;
+  color: #3b707d;
+  font-size: 3vw;
+  font-family: "Battambang", bold-700;
+  transition: all .5s ease-in-out .2s;
+}
+
+.proj_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10vw;
+  row-gap: 10vw;
+  
+  top: 35vh;
+  left: 15vw;
+  z-index: 1;
+  position: absolute;
+}
+
+.icon_img {
+  margin-top: 1vh;
+  width: 5vw;
+  height: 5vw;
+}
+
+.proj_button {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 2vw;
+  color: #3b707d;
+  font-size: 2vw;
+  font-family: "Battambang", light-300;
+  margin: 0 0 0 0;
+  transition: all .5s ease-in-out .2s;
+}
+.proj_button:hover {
+  background-color: #f7c9b6;
+}
+
+.proj_ol {
+  background-color: #cff4f9;
+  z-index: 100;
+
+  height: fit-content;
+  width: 76vw;
+  margin: 0 0 0 0;
+
+  position: absolute;
+  left: 12vw;
+  top: 21vh;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px #747474;
+  transition: all .5s ease-out .2s;
+}
+
+.exit_button {
+  background-color: transparent;
+  position: relative;
+  left: 73vw;
+  height: fit-content;
+  width: fit-content;
+  padding: 0 0 0 0;
+  border-width: 0;
+  margin: 0 0 0 0;
+  transition: all .5s ease-in-out .2s;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.exit_button:hover {
+  background-color: #F9D4CF;
+}
+
+.exit_button img {
+  border-radius: 10px;
+  width: 3vw;
+  padding: 0 0 0 0;
+  border-left: 0;
+  margin: 0 0 0 0;
+}
+
+.title_text {
+  color: #3b707d;
+  font-size: 2vw;
+  position: relative;
+  left: 31vw;
+  top:-3.5vh;
+  font-family: "Battambang", bold-700;
+  width: fit-content;
+  height:10vh;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  transition: all .5s ease-in-out .2s;
+}
+
+.pdiv{
+  position: relative;
+  left: 2vw;
+  top: -5.5vh;
+  margin: 0 0 0 0;
+  border: 0;
+  padding: 0 0 0 0;
+  font-size: 1.25vw;
+  color: #3b707d;
+  font-family: 'Battambang', light-300;
+  transition: all .5s ease-in-out .2s;
+}
+
+.a{
+  color: #3b707d;
+  transition: all .5s ease-in-out .2s;
+}
+
+.butdiv{
+  position: relative;
+  top: 0vh;
+  left: 28.5vw;
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 9vw;
+
+}
+
+.downbut{
+  
+  background-color: white; 
+  padding: 0 0 0 0;
+  border-width: 0;
+  margin: 0 0 0 0;
+  background-color: transparent;
+  border-radius: 4vw;
+  transition: all .5s ease-in-out .2s;
+}
+.downbut:hover{
+  background-color: #F9D4CF;
+  
+}
+
+.downbut img{
+  border-radius: 10px;
+  width: 4vw;
+  padding: 0 0 0 0;
+  border-left: 0;
+  margin: 0 0 0 0;
+}
+
+.sitebut{
+  background-color: transparent;
+  padding: 0 0 0 0;
+  border: 0;
+  margin: 0 0 0 0;
+  border-radius: 4vw;
+  transition: all .5s ease-in-out .2s;
+}
+.sitebut:hover{
+  background-color: #F9D4CF;
+}
+
+.sitebut img{
+  border-radius: 10px;
+  width: 4vw;
+  padding: 0 0 0 0;
+  border-left: 0;
+  margin: 4px 4px 0px 4px;
+}
+
+@media screen and (max-width: 1000px){
+    .title{
+      top: 5vh;
+      left: 30vw;
+      font-size: 10vw;
+    }
+
+    .proj_box{
+      top: 30vh;
+      left: 15vw;
+      column-gap: 15vw;
+    }
+
+    .icon_img{
+      width: 15vw;
+      height: 15vw;
+    }
+
+    .proj_button{
+      font-size: 4vw;
+    }
+
+    .proj_ol{
+      left: 3vw;
+      height: fit-content;
+      width: 93.5vw;
+    }
+
+    .title_text{
+      top: -4vh;
+      left: 29vw;
+      font-size: 6vw;
+    }
+
+    .exit_button{
+      left: 85.5vw;
+    }
+    .exit_button img{
+      width: 8vw;
+    }
+
+    .pdiv{
+      top: -5vh;
+      font-size: 3.5vw;
+    }
+
+    .butdiv{
+      top: -3vh;
+      left: 30vw;
+      column-gap: 15vw;
+    }
+
+    .downbut img{
+      width: 8vw;
+    }
+    
+    .sitebut img{
+      width: 8vw;
+    }
+}

@@ -1,0 +1,145 @@
+body{
+    background-color: #add8e6;
+}
+.maintext{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    z-index: 15;
+    top: 25%;
+    left: 42%;
+    margin: -100px 0 0 -150px;
+}
+.title{
+    font-size: 80px;
+    font-family: "Cursive";
+    color:aliceblue;
+    text-shadow: 2px 0 0 #C991DF, -2px 0 0 #C991DF, 0 2px 0 #C991DF, 0 -2px 0 #C991DF, 1px 1px #C991DF, -1px -1px 0 #C991DF, 1px -1px 0 #C991DF, -1px 1px 0 #C991DF;
+
+}
+
+#start{
+    position: absolute;
+    top: 55%;
+    left: 52%;
+    margin: -100px 0 0 -150px;
+    color:aliceblue;
+    text-align: center;
+}
+
+.star{
+    border: none;
+    width: 200px;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Cursive";
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: #add8e6; 
+    border: 2px solid white;
+}
+.star:hover{
+    background-color: #add8e6;
+    color: white;
+}
+
+#clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    font-size: 75px;
+    font-family: "Cursive";
+    color:aliceblue;
+    text-align: center;
+}
+
+.but1{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    z-index: 15;
+    top: 90%;
+    left: 41%;
+    margin: -100px 0 0 -150px;
+    color: lightblue;
+}
+.but2{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    z-index: 15;
+    top: 90%;
+    left: 62%;
+    margin: -100px 0 0 -150px;
+    color: lightblue;
+}
+
+.button {
+    border: none;
+    width: 210px;
+    color: white;
+    padding: 30px 70px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Cursive";
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: #add8e6; 
+    border: 2px solid white;
+}
+
+.button:hover {
+    background-color: #add8e6;
+    color: white;
+}
+
+#glasses{
+    top: 5%;
+    left: 85%;
+    font-family: "Cursive";
+    font-size: 25px;
+    position: absolute;
+    color: aliceblue;
+}
+
+.back{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    z-index: 15;
+    top: 15%;
+    left: 10%;
+    margin: -100px 0 0 -150px;
+}
+
+.back_button {
+    border: none;
+    width: 210px;
+    color: white;
+    padding: 30px 70px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Cursive";
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: #add8e6; 
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+.back_button:hover {
+    background-color: #add8e6;
+    color: white;
+}
