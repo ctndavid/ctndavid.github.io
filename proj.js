@@ -53,7 +53,7 @@ function dwbutton() {
   downbut.onclick = function () {
     element.setAttribute(
       "href",
-      "data:Application/.exe;charset=utf-8," +
+      "data:application/executable;charset=utf-8," +
         encodeURIComponent(
           "data/DrinkWater.exe"
         )
@@ -133,10 +133,10 @@ function cppbutton() {
       "href",
       "data:text/plain;charset=utf-8," +
         encodeURIComponent(
-          "data/cppsbasics.exe"
+          "data/cppsbasics.txt"
         )
     );
-    element.setAttribute("download", "Drink Water");
+    element.setAttribute("download", "Cpp's Basics");
     element.style.display = "none";
     downbut.appendChild(element);
     element.click();

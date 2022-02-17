@@ -100,7 +100,7 @@ function stopfunc(){
     if(alarm){
         music.pause();
         music.currentTime = 0;
-        addmin(1);
+        addmin(30);
         alarm = false;
         despawn();
     }
@@ -111,7 +111,7 @@ function snoozefunc(){
         music.pause();
         music.pause();
         music.currentTime = 0;
-        addmin(1);
+        addmin(10);
         alarm = false;
         despawn();
     }
