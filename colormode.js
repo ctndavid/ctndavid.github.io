@@ -71,7 +71,7 @@ function homecolorlight(){
     document.getElementsByClassName('NL')[0].style.color = '#3b707d';
     document.getElementById('sub').style.color = '#3b707d';
     document.getElementById('topbtn').style.background = '#3b707d';
-    document.getElementById('mode_img').src = 'data/dk.png';
+    document.getElementById('mode_img').src = 'data/li2.png';
     document.getElementById('GHI').src = 'data/ghdk.png';
 }
 
@@ -99,7 +99,7 @@ function homecolordark(){
     document.getElementsByClassName('NL')[0].style.color = '#f8efe4';
     document.getElementById('sub').style.color = '#f8efe4';
     document.getElementById('topbtn').style.background = '#E6C2BF';
-    document.getElementById('mode_img').src = 'data/li.png';
+    document.getElementById('mode_img').src = 'data/dk1.png';
     document.getElementById('GHI').src = 'data/ghli.png'; 
 }
 
@@ -117,7 +117,7 @@ function projcolorlight(){
     document.getElementById('app1').style.color = '#3b707d';
     document.getElementById('app2').style.color = '#3b707d';
     document.getElementById('title').style.color ='#3b707d';
-    document.getElementById('mode_img').src = 'data/dk.png';
+    document.getElementById('mode_img').src = 'data/li2.png';
     if(ol){
         document.getElementById('overlay').style.background = '#cff4f9';
     }
@@ -134,7 +134,7 @@ function projcolordark(){
         }
         i++;
     }
-    document.getElementById('mode_img').src = 'data/li.png';
+    document.getElementById('mode_img').src = 'data/dk1.png';
     document.getElementById('app1').style.color = '#f8efe4';
     document.getElementById('app2').style.color = '#f8efe4';
     document.getElementById('title').style.color ='#f8efe4';
@@ -146,7 +146,7 @@ function projcolordark(){
 function aboutcolorlight(){
     let i = 0;
     document.body.style.background = '#adc2d3';
-    document.getElementById('mode_img').src = 'data/dk.png';
+    document.getElementById('mode_img').src = 'data/li2.png';
     while(true){//topnav anchor
         try{
             document.getElementsByClassName('a1')[i].style.color = '#3b707d';
@@ -204,7 +204,7 @@ function aboutcolordark(){
         }
         i++;
     }
-    document.getElementById('mode_img').src = 'data/li.png';
+    document.getElementById('mode_img').src = 'data/dk1.png';
     document.getElementsByClassName('ME')[0].style.color = '#e6c2bf';
     document.getElementsByClassName('ME')[0].style.borderColor = '#a7a5e6';
     document.getElementsByClassName('DC')[0].style.color = '#e6c2bf';
