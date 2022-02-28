@@ -53,7 +53,7 @@ function dwbutton() {
   downbut.onclick = function () {
     element.setAttribute(
       "href",
-      "data:application/executable;charset=utf-8," +
+      "data: program/File;charset=utf-8," +
         encodeURIComponent(
           "data/DrinkWater.exe"
         )
@@ -143,9 +143,85 @@ function cppbutton() {
     downbut.removeChild(element);
   };
 
+  butdiv.appendChild(downbut); 
+}
+
+function wapibutton() {
+  ol = true;
+  overlay.setAttribute("class", "proj_ol");
+  overlay.setAttribute('id', 'overlay');
+  thememode();
+
+  let exit = document.createElement("button");
+  exit.setAttribute("id", "exit_but");
+  exit.setAttribute("class", "exit_button");
+  exit.onclick = remove;
+  overlay.appendChild(exit);
+
+
+  let image = document.createElement("img");
+  image.src ="data/exit.png";
+  image.setAttribute("id", "exit_img");
+  exit.appendChild(image);
+
+  let header = document.createElement("h1");
+  header.setAttribute("class", "title_text");
+  header.setAttribute("id", "header");
+  header.innerHTML = "Drink Water";
+  overlay.appendChild(header);
+
+  let pdiv = document.createElement("div");
+  pdiv.setAttribute("id", "pdiv");
+  pdiv.setAttribute("class", "pdiv");
+
+  let paragraph = document.createElement("p");
+  paragraph.setAttribute("id", "paragraph");
+  paragraph.innerHTML =
+    "◦Idea: I wanted to begin my first project using an API because I was curious what it is so interesting that everyone uses<br>them...and yes, I was amazed. Finding it difficult, dealing for the first time with a JSON file, but I did in Python and after<br>that I began working on the website alternative.<br>◦Technologies: Python with requests module and JavaScript with XMLHttpRequest()<br>◦Usage: Input a city and a number of days and you get the forecast for that period<br>◦Tips: Download button is for Python application. Website button is for the JavaScript Application";
+  pdiv.appendChild(paragraph);
+  overlay.appendChild(pdiv);
+
+  let butdiv = document.createElement('div');
+  butdiv.setAttribute('id', 'butdiv');
+  butdiv.setAttribute('class', 'butdiv');
+  overlay.appendChild(butdiv);
+
+  let downbut = document.createElement("button");
+  downbut.setAttribute("id", "downbut");
+  downbut.setAttribute("class", "downbut");
+  let downimage = document.createElement("img");
+  downimage.src ="data/down.png";
+  downimage.setAttribute("id", "down_img");
+  downbut.appendChild(downimage);
+  var element = document.createElement("a");
+  downbut.onclick = function () {
+    element.setAttribute(
+      "href",
+      "data: program/File;charset=utf-8," +
+        encodeURIComponent(
+          "weather/Weather.py"
+        )
+    );
+    element.setAttribute("download", "Weather App Python");
+    element.style.display = "none";
+    downbut.appendChild(element);
+    element.click();
+    downbut.removeChild(element);
+  };
+
   butdiv.appendChild(downbut);
 
-  
+  let sitebut = document.createElement("button");
+  sitebut.setAttribute("id", "sitebut");
+  sitebut.setAttribute("class", "sitebut");
+  let siteimg = document.createElement("img");
+  siteimg.src = "data/web.png";
+  siteimg.setAttribute("id", "siteimg");
+  sitebut.appendChild(siteimg);
+  sitebut.onclick = function () {
+    window.open("weather/index.html", '_blank');
+  };
+  butdiv.appendChild(sitebut);
 }
 
 function remove() {
