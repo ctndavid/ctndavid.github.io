@@ -177,7 +177,7 @@ function wapibutton() {
   let paragraph = document.createElement("p");
   paragraph.setAttribute("id", "paragraph");
   paragraph.innerHTML =
-    "◦Idea: I wanted to begin my first project using an API because I was curious what it is so interesting that everyone uses<br>them...and yes, I was amazed. Finding it difficult, dealing for the first time with a JSON file, but I did in Python and after<br>that I began working on the website alternative.<br>◦Technologies: Python with requests module and JavaScript with XMLHttpRequest()<br>◦Usage: Input a city and a number of days and you get the forecast for that period<br>◦Tips: Download button is for Python application. Website button is for the JavaScript Application";
+    "◦Idea: I wanted to begin my first project using an API because I was curious what it is so interesting that everyone uses<br>them...and yes, I was amazed. Finding it difficult, dealing for the first time with a JSON file, but I did in Python and after<br>that I began working on the website alternative. Edit: I cannot use API's on a HTTPS website, so no more weather things<br> going on here<br>◦Technologies: Python with requests module and JavaScript with XMLHttpRequest()<br>◦Usage: Input a city and a number of days and you get the forecast for that period<br>◦Tips: Download button is for Python application. Website button is for the JavaScript Application";
   pdiv.appendChild(paragraph);
   overlay.appendChild(pdiv);
 
@@ -210,7 +210,7 @@ function wapibutton() {
   };
 
   butdiv.appendChild(downbut);
-
+/*
   let sitebut = document.createElement("button");
   sitebut.setAttribute("id", "sitebut");
   sitebut.setAttribute("class", "sitebut");
@@ -222,6 +222,7 @@ function wapibutton() {
     window.open("weather/index.html", '_blank');
   };
   butdiv.appendChild(sitebut);
+  */
 }
 
 function remove() {
