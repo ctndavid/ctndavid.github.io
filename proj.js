@@ -146,6 +146,7 @@ function cppbutton() {
   butdiv.appendChild(downbut); 
 }
 
+/*
 function wapibutton() {
   ol = true;
   overlay.setAttribute("class", "proj_ol");
@@ -210,7 +211,7 @@ function wapibutton() {
   };
 
   butdiv.appendChild(downbut);
-/*
+
   let sitebut = document.createElement("button");
   sitebut.setAttribute("id", "sitebut");
   sitebut.setAttribute("class", "sitebut");
@@ -222,8 +223,9 @@ function wapibutton() {
     window.open("weather/index.html", '_blank');
   };
   butdiv.appendChild(sitebut);
-  */
+  
 }
+*/
 
 function remove() {
   ol = false;

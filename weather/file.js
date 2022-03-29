@@ -10,6 +10,7 @@ let phone = false;
 function send(){
     city = document.getElementById('city').value;
     days = document.getElementById('days').value;
+
     if(window.innerWidth <= 1000){
         phone = true;
     }
@@ -27,6 +28,8 @@ function send(){
     }
     
     if( (city[0] >= 'a' && city[0] <= 'z') || ('A' <= city[0] && city[0] <= 'Z')){
+        
+        city = city.toLocaleUpperCase();
         document.getElementsByClassName('error')[0].style.display = 'none';
         document.getElementsByClassName('overlay')[0].style.display = "block";
         document.getElementsByClassName('o_title')[0].innerHTML = city;
