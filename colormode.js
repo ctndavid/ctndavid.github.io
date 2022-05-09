@@ -116,7 +116,6 @@ function projcolorlight(){
     }
     document.getElementById('app1').style.color = '#3b707d';
     document.getElementById('app2').style.color = '#3b707d';
-    document.getElementById('app3').style.color = '#3b707d';
     document.getElementById('title').style.color ='#3b707d';
     document.getElementById('mode_img').src = 'data/li2.png';
     if(ol){
@@ -138,7 +137,6 @@ function projcolordark(){
     document.getElementById('mode_img').src = 'data/dk1.png';
     document.getElementById('app1').style.color = '#f8efe4';
     document.getElementById('app2').style.color = '#f8efe4';
-    document.getElementById('app3').style.color = '#f8efe4';
     document.getElementById('title').style.color ='#f8efe4';
     if(ol){
         document.getElementById('overlay').style.background = '#e6c2bf';
