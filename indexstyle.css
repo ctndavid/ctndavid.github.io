@@ -1,79 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;700&display=swap");
 
-body{
+body {
   background-color: #adc2d3;
-  transition: all .5s ease-in-out .2s;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
-.soc{
+.soc {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   column-gap: 15vw;
+  align-items: center;
+  justify-content: center;
 
   position: relative;
-  top: 40vh;
+  top: 30vh;
   left: 5vw;
 
   width: fit-content;
-  height: 70vh;
+  height: 35vh;
+  /* background-color: black; */
 }
 
-.ME{
+.ME {
   position: inherit;
-  top: 3vh;
-  
+
   width: fit-content;
   height: fit-content;
 
-  transition: all .5s ease-in-out .2s;
+  transition: all 0.5s ease-in-out 0.2s;
   color: #3b707d;
 }
 
-.ME p{
+.ME p {
   font-size: 2.5vw;
-  font-family: 'Battambang', light-300;
+  font-family: "Battambang", light-300;
   margin: 0 0 0 0;
   text-align: center;
 }
 
-.ME2{
+.ME2 {
   width: fit-content;
-  transition: all .5s ease-in-out .2s;
+  transition: all 0.5s ease-in-out 0.2s;
+  border-radius: 50%;
 }
-.ME2 img{
-  width: 20vw;
+.ME2 img {
+  width: 15vw;
+  border: 5px solid white;
+  border-radius: 50%;
 }
 
-.social{
+.social {
   display: flex;
   flex-direction: column;
   row-gap: 5vh;
   width: fit-content;
 }
-.social button{
+.social button {
   width: fit-content;
   background-color: transparent;
   border: 0;
   border-radius: 5vw;
   margin-top: 10px;
-  transition: all .5s ease-in-out .2s;
+  transition: all 0.5s ease-in-out 0.2s;
 }
-.social button:hover{
+.social button:hover {
   background-color: #f7c9b6;
   border-radius: 5vw;
 }
-.social img{
+.social img {
   width: 4vw;
-  transition: all .5s ease-in-out .2s;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
-.a{
-  color:#242e2d;text-decoration: none;
-  transition: all .5s ease-in-out .2s;
+.a {
+  color: #242e2d;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
-.NL{
+.NL {
   position: relative;
   top: 60vh;
   left: 6vw;
@@ -81,103 +86,104 @@ body{
   height: 50vh;
   color: #3b707d;
 }
-.NL div{
+.NL div {
   position: relative;
   left: 18vw;
   font-size: 1.5vw;
-  font-family: 'Battambang', light-300;
-  transition: all .5s ease-in-out .2s;
+  font-family: "Battambang", light-300;
+  transition: all 0.5s ease-in-out 0.2s;
   width: fit-content;
   text-align: center;
 }
-.NL h1{
+.NL h1 {
   position: relative;
   left: 36vw;
-  font-family: 'Battambang', bold-700;
+  font-family: "Battambang", bold-700;
   font-size: 2vw;
   font-weight: bold;
-  transition: all .5s ease-in-out .2s;
+  transition: all 0.5s ease-in-out 0.2s;
   width: fit-content;
 }
-.NL p{
+.NL p {
   position: relative;
   right: 1vw;
   font-size: 1.5vw;
-  font-family: 'Battambang', light-300;
-  transition: all .5s ease-in-out .2s;
+  font-family: "Battambang", light-300;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
-
-.topbtn{
-  display: none; 
-  position: fixed; 
-  bottom: 1vw; 
-  right: 1vw; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: #E6C2BF; 
-  cursor: pointer; 
-  padding: 0; 
-  border-radius: 2vw; 
-  transition: all .5s ease-in-out .2s;
+.topbtn {
+  display: none;
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #e6c2bf;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 2vw;
+  transition: all 0.5s ease-in-out 0.2s;
 }
-.topbtn img{
+.topbtn img {
   width: 2vw;
 }
 
-.topbtn:hover{
-  background-color: #E6C2BF;
+.topbtn:hover {
+  background-color: #e6c2bf;
 }
 
 @media screen and (max-width: 1000px) {
-  .soc{
+  .soc {
+    top: 30vh;
     left: 1vw;
-    column-gap: 7vw;
+    height: 15vh;
+    column-gap: 3vw;
   }
 
-  .ME{
+  .ME {
     top: 0vh;
   }
 
-  .ME p{
+  .ME p {
     font-size: 5vw;
-
   }
 
-  .ME2 img{
-    width: 30vw;
+  .ME2 img {
+    width: 20vw;
+    border: 2px solid white;
   }
 
-  .social img{
+  .social img {
     width: 8vw;
   }
-  
-  .NL{
+
+  .NL {
     left: 1vw;
-    top: 30vh;
+    top: 65vh;
     height: 50vw;
   }
 
-  .NL h1{
+  .NL h1 {
     left: 30vw;
     font-size: 7vw;
   }
-  .NL div{
+  .NL div {
     font-size: 3vw;
     left: -1vw;
   }
 
-  .NL p{
+  .NL p {
     font-size: 3vw;
   }
 
-  .topbtn{
+  .topbtn {
     bottom: 1vw;
     right: 2vw;
   }
 
-  .topbtn img{
+  .topbtn img {
     width: 5vw;
   }
 }
